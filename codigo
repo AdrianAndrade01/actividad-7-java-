@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class actividad7 {
+     public static void main(String[] args){
+       Scanner entrada=new Scanner(System.in);
+       int numero;
+       String resultado ="";
+         System.out.println("Digite un numero entero");
+       numero = entrada.nextInt();
+       
+         System.out.println("los siguientes numeros primos son:");
+       for (int i=1;i<numero;i++){
+           int primos=0;
+           for(int n=1;n<=i;n++){
+               if(i % n==0){
+                   primos ++;               
+               }        
+           }
+           if(primos==2)
+               System.out.println(i);
+       }                         
+                int a=0, b=1, s, num;
+           System.out.println("Dame un numero para calcular la Sucesión de Fibonacci");
+           num = entrada.nextInt();
+           System.out.println("La Sucesión de Fibonacci es: ");
+           for (int j=0; j<num; j++){
+               System.out.println(a);
+                  s = a + b;
+               a = b;
+               b = s;    
+       }
+     }
+               
+     }
